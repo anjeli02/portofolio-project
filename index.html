@@ -3,255 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Creative Technologist</title>
+    <title>Anjeli | Creative Technologist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome untuk ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Hero Section */
-.hero-section {
-    background-color: #fff; /* Latar belakang hero section */
-    padding: 100px 0; /* Sesuaikan padding atas dan bawah */
-    text-align: center;
-}
-
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr auto; /* Teks di kiri, gambar di kanan */
-    gap: 50px;
-    align-items: center;
-    text-align: left;
-}
-
-.hero-text h1 {
-    font-size: 3rem; /* Ukuran heading utama */
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
-.hero-image img {
-    width: 240px; /* Ukuran gambar profil */
-    height: 240px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #ff6464; /* Warna tombol utama */
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #e05252;
-}
-
-/* Section Headers */
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 50px;
-}
-
-.section-header h2 {
-    font-size: 1.5rem;
-    color: #21243D; /* Warna heading section */
-}
-
-.view-all {
-    color: #00A8CC; /* Warna link "View All" */
-    font-weight: 500;
-}
-
-/* Recent Posts */
-.recent-posts {
-    background-color: #EDF7FA; /* Latar belakang section recent posts */
-    padding: 30px 0 50px;
-}
-
-.posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 kolom di desktop, 1 kolom di mobile */
-    gap: 20px;
-}
-
-.post-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.post-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #21243D;
-}
-
-.post-meta {
-    font-size: 0.9rem;
-    color: #8695A4;
-    margin-bottom: 15px;
-}
-
-.post-card p {
-    font-size: 0.95rem;
-    color: #333;
-}
-
-/* Featured Works */
-.featured-works {
-    padding: 50px 0;
-}
-
-.work-item {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E0E0E0;
-    align-items: flex-start; /* Mengatur item agar sejajar di atas */
-}
-
-.work-item:last-child {
-    border-bottom: none;
-}
-
-.work-item img {
-    width: 246px; /* Lebar gambar proyek */
-    height: 180px; /* Tinggi gambar proyek */
-    border-radius: 6px;
-    object-fit: cover;
-    flex-shrink: 0; /* Mencegah gambar menyusut */
-}
-
-.work-info h3 {
-    font-size: 1.6rem;
-    color: #21243D;
-    margin-bottom: 10px;
-}
-
-.work-meta {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 15px;
-}
-
-.work-meta .year {
-    background-color: #21243D;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 16px;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.work-meta .category {
-    color: #8695A4;
-    font-size: 1rem;
-}
-
-.work-info p {
-    color: #333;
-    font-size: 1rem;
-}
-
-/* Responsive Homepage */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 50px 0;
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr; /* Satu kolom di mobile */
-        text-align: center;
-        gap: 30px;
-    }
-
-    .hero-text {
-        order: 2; /* Pindahkan teks ke bawah gambar */
-    }
-
-    .hero-image {
-        order: 1; /* Pindahkan gambar ke atas teks */
-        text-align: center;
-    }
-
-    .hero-image img {
-        width: 170px; /* Ukuran gambar profil di mobile */
-        height: 170px;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .section-header {
-        flex-direction: column; /* Tumpuk header dan "View All" */
-        align-items: flex-start;
-        gap: 10px;
-        margin-top: 30px;
-    }
-
-    .section-header h2 {
-        font-size: 1.3rem;
-    }
-
-    .recent-posts {
-        padding: 30px 0;
-    }
-
-    .posts-grid {
-        grid-template-columns: 1fr; /* Satu kolom untuk post di mobile */
-    }
-
-    .featured-works {
-        padding: 30px 0;
-    }
-
-    .work-item {
-        flex-direction: column; /* Gambar di atas, info di bawah */
-        text-align: center;
-    }
-
-    .work-item img {
-        width: 100%; /* Lebar penuh di mobile */
-        height: auto;
-        max-width: 246px; /* Batasi lebar agar tidak terlalu besar di layar kecil */
-        margin: 0 auto 15px; /* Pusatkan gambar */
-    }
-
-    .work-info {
-        text-align: left; /* Sesuaikan teks info agar tetap di kiri */
-    }
-
-    .work-info h3 {
-        font-size: 1.4rem;
-    }
-
-    .work-meta {
-        justify-content: center; /* Pusatkan meta info */
-        margin-bottom: 10px;
-    }
-}
+        .hero-section {
+            background-color: #fff; /* Latar belakang hero section */
+            padding: 100px 0; /* Sesuaikan padding atas dan bawah */
+            text-align: center;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr auto; /* Teks di kiri, gambar di kanan */
+            gap: 50px;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .hero-text h1 {
+            font-size: 3rem; /* Ukuran heading utama */
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        
+        .hero-image img {
+            width: 240px; /* Ukuran gambar profil */
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #ff6464; /* Warna tombol utama */
+            color: #fff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e05252;
+        }
+        
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: #21243D; /* wna heading section */
+        }
+        
+        .view-all {
+            color: #00A8CC; /* warna link "View All" */
+            font-weight: 500;
+        }
+        
+        /* Recent Posts */
+        .recent-posts {
+            background-color: #EDF7FA; /* latarr belakang section recent posts */
+            padding: 30px 0 50px;
+        }
+        
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 kolom di desktop, 1 kolom di mobile */
+            gap: 20px;
+        }
+        
+        .post-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .post-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #21243D;
+        }
+        
+        .post-meta {
+            font-size: 0.9rem;
+            color: #8695A4;
+            margin-bottom: 15px;
+        }
+        
+        .post-card p {
+            font-size: 0.95rem;
+            color: #333;
+        }
+        
+        /* Featured Works */
+        .featured-works {
+            padding: 50px 0;
+        }
+        
+        .work-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #E0E0E0;
+            align-items: flex-start; /* atur item agar sejajar di atas */
+        }
+        
+        .work-item:last-child {
+            border-bottom: none;
+        }
+        
+        .work-item img {
+            width: 246px; /* Lebar gambar proyek */
+            height: 180px; /* Tinggi gambar proyek */
+            border-radius: 6px;
+            object-fit: cover;
+            flex-shrink: 0; /* biar ga nyusut */
+        }
+        
+        .work-info h3 {
+            font-size: 1.6rem;
+            color: #21243D;
+            margin-bottom: 10px;
+        }
+        
+        .work-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .work-meta .year {
+            background-color: #21243D;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 16px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .work-meta .category {
+            color: #8695A4;
+            font-size: 1rem;
+        }
+        
+        .work-info p {
+            color: #333;
+            font-size: 1rem;
+        }
+        
+        /* Responsive Homepage */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 50px 0;
+            }
+        
+            .hero-content {
+                grid-template-columns: 1fr; /* Satu kolom di mobile */
+                text-align: center;
+                gap: 30px;
+            }
+        
+            .hero-text {
+                order: 2; /* pindahin teks ke bawah gambar */
+            }
+        
+            .hero-image {
+                order: 1; /* pindahin gambar ke atas teks */
+                text-align: center;
+            }
+        
+            .hero-image img {
+                width: 170px; /* Ukuran gambar profil di mobile */
+                height: 170px;
+            }
+        
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+        
+            .section-header {
+                flex-direction: column; /* Tumpuk header dan "View All" */
+                align-items: flex-start;
+                gap: 10px;
+                margin-top: 30px;
+            }
+        
+            .section-header h2 {
+                font-size: 1.3rem;
+            }
+        
+            .recent-posts {
+                padding: 30px 0;
+            }
+        
+            .posts-grid {
+                grid-template-columns: 1fr; /* Satu kolom untuk post di mobile */
+            }
+        
+            .featured-works {
+                padding: 30px 0;
+            }
+        
+            .work-item {
+                flex-direction: column; /* Gambar di atas, info di bawah */
+                text-align: center;
+            }
+        
+            .work-item img {
+                width: 100%; /* Lebar penuh di mobile */
+                height: auto;
+                max-width: 246px; /* Batasi lebar agar tidak terlalu besar di layar kecil */
+                margin: 0 auto 15px; /* Pusatkan gambar */
+            }
+        
+            .work-info {
+                text-align: left; /* Sesuaikan teks info agar tetap di kiri */
+            }
+        
+            .work-info h3 {
+                font-size: 1.4rem;
+            }
+        
+            .work-meta {
+                justify-content: center; /* Pusatkan meta info */
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -276,7 +274,7 @@
         <section class="hero-section">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <h1>Hi, I am John,<br>Creative Technologist</h1>
+                    <h1>Hi, Saya Ain Jelita Ikhwati,<br>Creative Technologist</h1>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     <a href="#" class="btn btn-primary">Download Resume</a>
                 </div>
@@ -286,7 +284,6 @@
             </div>
         </section>
 
-        <!-- Recent Posts Section -->
         <section class="recent-posts">
             <div class="container">
                 <div class="section-header">
@@ -312,7 +309,6 @@
             </div>
         </section>
 
-        <!-- Featured Works Section -->
         <section class="featured-works">
             <div class="container">
                 <div class="section-header">
@@ -376,3 +372,4 @@
     </script>
 </body>
 </html>
+
