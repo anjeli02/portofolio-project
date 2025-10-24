@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Anjeli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .works-page-main h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            color: #21243D;
+        }
+
+        .works-page-main .works-list .work-item {
+            margin-bottom: 40px; /* jsrak antar item di halaman wors */
+            padding-bottom: 30px;
+        }
+        .works-page-main .works-list .work-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .works-page-main h1 {
+                font-size: 2rem;
+                margin-top: 30px;
+                text-align: center; /* pusartkan judul di mobile */
+            }
+
+            .works-page-main .works-list .work-item {
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+            }
+        .works-list{
+            display: grid;
+            gap: 30px;
+        }
+        .work-item img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .work-info h3{
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #21243D;
+        }
+    } 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Home</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="works-page-main">
+        <div class="container">
+            <h1>Works</h1>
+            <div class="works-list">
+                <article class="work-item">
+                    <img src="designing-dashboard.jpg" alt="Designing Dashboards">
+                    <div class="work-info">
+                        <h3>Designing Dashboards</h3>
+                        <div class="work-meta">
+                            <span class="year">2020</span> <span class="category">Dashboard</span>
+                        </div>
+                        <p>Proyek pengembangan dashboard interaktif menggunakan React dan D3.js untuk memvisualisasikan data real-time, memberikan pengalaman pengguna yang dinamis dan informatif.</p>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <img src="modern1.png" alt="Vibrant Portraits of 2020" width="200" height="200">
+                    <div class="work-info">
+                        <h3>Modern E-commerce Web App</h3>
+                        <div class="work-meta">
+                            <span class="year">2020</span> <span class="category">E-commerce, React, Node.js</span>
+                        </div>
+                        <p>Aplikasi e-commerce lengkap dengan fitur keranjang belanja, checkout, dan manajemen produk. Dibangun dengan fokus pada kecepatan dan user experience yang mulus.</p>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <img src="landing1.jpg" alt="36 Days of Malayalam type">
+                    <div class="work-info">
+                        <h3>Responsive Landing Page for Startup</h3>
+                        <div class="work-meta">
+                            <span class="year">2018</span> <span class="category">Landing Page, Responsive Web Design</span>
+                        </div>
+                        <p>Pembuatan landing page yang menarik dan responsif untuk startup teknologi, dirancang untuk mengkonversi pengunjung menjadi pengguna dengan desain yang bersih dan CTA yang jelas.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#https://www.facebook.com/ainjelita.ikhwatii/?locale=id_ID"><i class="fab fa-facebook-square"></i></a>
+                <a href="#https://www.instagram.com/_anjeli23/"><i class="fab fa-instagram"></i></a>
+                <a href="#https://x.com/matchalatte318?s=21"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>Copyright © 2023 Ain Jelita Ikhwati. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

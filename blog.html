@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Anjeli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .blog-page-main h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #21243D;
+}
+
+.blog-posts-list {
+    display: grid;
+    gap: 30px; /* jarak antar post */
+}
+
+.blog-post-item {
+    background-color: #fff; /* bekgron untuk setiap post */
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.blog-post-item:last-child {
+    border-bottom: none;
+}
+
+.blog-post-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #21243D;
+}
+
+.blog-post-item h3 a {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.blog-post-item h3 a:hover {
+    color: #ff6464; /* wrna hover untuk judul blog */
+}
+
+.blog-meta {
+    font-size: 1rem;
+    color: #8695A4;
+    margin-bottom: 20px;
+}
+
+.blog-post-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Blog Page */
+@media (max-width: 768px) {
+    .blog-page-main h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .blog-post-item {
+        padding-bottom: 20px;
+    }
+
+    .blog-post-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .blog-meta {
+        font-size: 0.9rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Home</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-page-main">
+        <div class="container">
+            <h1> My Blog</h1>
+            <div class="blog-posts-list">
+                <article class="blog-post-item">
+                    <a href="single-blog.html"><h3>Membangun Sistem Desain dari Nol di Figma</h3></a>
+                    <div class="blog-meta">
+                        <span>12 Feb 2019</span> | <span>Design System, UI/UX</span>
+                    </div>
+                    <p>Pembahasan mendalam tentang langkah-langkah dalam menciptakan sistem desain yang konsisten dan skalabel, mulai dari prinsip dasar hingga implementasi komponen. Sebuah fondasi kuat untuk proyek Front-End yang kompleks.</p>
+                </article>
+                <article class="blog-post-item">
+                    <a href="single-blog.html"><h3>Meningkatkan Performa Aplikasi Web dengan Optimasi CSS</h3></a>
+                    <div class="blog-meta">
+                        <span>12 Feb 2019</span> | <span>Web Performance, CSS Optimization</span>
+                    </div>
+                    <p>Tips dan trik praktis untuk mengoptimalkan kode CSS demi loading website yang lebih cepat dan pengalaman pengguna yang lebih baik. Dari CSS-in-JS hingga Critical CSS, kita bahas semuanya.</p>
+                </article>
+                <article class="blog-post-item">
+                    <a href="single-blog.html"><h3>Pengenalan Konsep Komponen dalam React.js</h3></a>
+                    <div class="blog-meta">
+                        <span>12 Feb 2019</span> | <span>React.js, Components</span>
+                    </div>
+                    <p>Panduan lengkap untuk memahami dan mulai menggunakan komponen dalam ekosistem React.js, fondasi utama untuk membangun antarmuka pengguna yang modular dan reusabel.</p>
+                </article>
+                <article class="blog-post-item">
+                    <a href="single-blog.html"><h3>Membuat Animasi UI Halus dengan CSS Saja</h3></a>
+                    <div class="blog-meta">
+                        <span>12 Feb 2019</span> | <span>CSS Animation, UI/UX</span>
+                    </div>
+                    <p>Menjelajahi teknik-teknik CSS untuk menciptakan transisi dan animasi yang memukau tanpa ketergantungan JavaScript, meningkatkan pengalaman visual pengguna.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#https://www.facebook.com/ainjelita.ikhwatii/?locale=id_ID"><i class="fab fa-facebook-square"></i></a>
+                <a href="#https://www.instagram.com/_anjeli23/"><i class="fab fa-instagram"></i></a>
+                <a href="#https://x.com/matchalatte318?s=21"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>Copyright © 2023  Ain Jelita Ikhwati. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
