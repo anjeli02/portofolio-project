@@ -3,253 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjeli</title>
+    <title>John Doe | Creative Technologist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .hero-section {
-            background-color: #fff; 
-            padding: 100px 0; 
-            text-align: center;
-        }
+        /* Hero Section */
+.hero-section {
+    background-color: #fff; /* Latar belakang hero section */
+    padding: 100px 0; /* Sesuaikan padding atas dan bawah */
+    text-align: center;
+}
 
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr auto; 
-            gap: 50px;
-            align-items: center;
-            text-align: left;
-        }
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Teks di kiri, gambar di kanan */
+    gap: 50px;
+    align-items: center;
+    text-align: left;
+}
 
-        .hero-text h1 {
-            font-size: 3rem; 
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
+.hero-text h1 {
+    font-size: 3rem; /* Ukuran heading utama */
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
 
-        .hero-text p {
-            font-size: 1rem;
-            margin-bottom: 30px;
-        }
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
 
-        .hero-image img {
-            width: 240px; /* ikuran gambar profil */
-            height: 240px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+.hero-image img {
+    width: 240px; /* Ukuran gambar profil */
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
 
-        .btn-primary {
-            background-color: #ff6464; /* warna tombol utama */
-            color: #fff;
-        }
+.btn-primary {
+    background-color: #ff6464; /* Warna tombol utama */
+    color: #fff;
+}
 
-        .btn-primary:hover {
-            background-color: #e05252;
-        }
+.btn-primary:hover {
+    background-color: #e05252;
+}
 
-        /* section headers */
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-            margin-top: 50px;
-        }
+/* Section Headers */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
 
-        .section-header h2 {
-            font-size: 1.5rem;
-            color: #21243D; /* qarna heading section */
-        }
+.section-header h2 {
+    font-size: 1.5rem;
+    color: #21243D; /* Warna heading section */
+}
 
-        .view-all {
-            color: #00A8CC; /* warna link view all */
-            font-weight: 500;
-        }
+.view-all {
+    color: #00A8CC; /* Warna link "View All" */
+    font-weight: 500;
+}
 
-        /* recent posts */
-        .recent-posts {
-            background-color: #EDF7FA; /* latar belakang section recent posts */
-            padding: 30px 0 50px;
-        }
+/* Recent Posts */
+.recent-posts {
+    background-color: #EDF7FA; /* Latar belakang section recent posts */
+    padding: 30px 0 50px;
+}
 
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 kolom di desktop, 1 kolom di mobile */
-            gap: 20px;
-        }
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 kolom di desktop, 1 kolom di mobile */
+    gap: 20px;
+}
 
-        .post-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
+.post-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
 
-        .post-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: #21243D;
-        }
+.post-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #21243D;
+}
 
-        .post-meta {
-            font-size: 0.9rem;
-            color: #8695A4;
-            margin-bottom: 15px;
-        }
+.post-meta {
+    font-size: 0.9rem;
+    color: #8695A4;
+    margin-bottom: 15px;
+}
 
-        .post-card p {
-            font-size: 0.95rem;
-            color: #333;
-        }
+.post-card p {
+    font-size: 0.95rem;
+    color: #333;
+}
 
-        /* Featured Works */
-        .featured-works {
-            padding: 50px 0;
-        }
+/* Featured Works */
+.featured-works {
+    padding: 50px 0;
+}
 
-        .work-item {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #E0E0E0;
-            align-items: flex-start; /* agar sejajar di atas */
-        }
+.work-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    align-items: flex-start; /* Mengatur item agar sejajar di atas */
+}
 
-        .work-item:last-child {
-            border-bottom: none;
-        }
+.work-item:last-child {
+    border-bottom: none;
+}
 
-        .work-item img {
-            width: 246px; /* lebar gambar proyek */
-            height: 180px; 
-            border-radius: 6px;
-            object-fit: cover;
-            flex-shrink: 0; /* biar gambar ga menyusut */
-        }
+.work-item img {
+    width: 246px; /* Lebar gambar proyek */
+    height: 180px; /* Tinggi gambar proyek */
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0; /* Mencegah gambar menyusut */
+}
 
-        .work-info h3 {
-            font-size: 1.6rem;
-            color: #21243D;
-            margin-bottom: 10px;
-        }
+.work-info h3 {
+    font-size: 1.6rem;
+    color: #21243D;
+    margin-bottom: 10px;
+}
 
-        .work-meta {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 15px;
-        }
+.work-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
 
-        .work-meta .year {
-            background-color: #21243D;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 16px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
+.work-meta .year {
+    background-color: #21243D;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
 
-        .work-meta .category {
-            color: #8695A4;
-            font-size: 1rem;
-        }
+.work-meta .category {
+    color: #8695A4;
+    font-size: 1rem;
+}
 
-        .work-info p {
-            color: #333;
-            font-size: 1rem;
-        }
+.work-info p {
+    color: #333;
+    font-size: 1rem;
+}
 
-        /* responsive homepage */
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 50px 0;
-            }
+/* Responsive Homepage */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
 
-            .hero-content {
-                grid-template-columns: 1fr; /* 1 kolom di mobile */
-                text-align: center;
-                gap: 30px;
-            }
+    .hero-content {
+        grid-template-columns: 1fr; /* Satu kolom di mobile */
+        text-align: center;
+        gap: 30px;
+    }
 
-            .hero-text {
-                order: 2; /* mindahin teks ke bawah gambar */
-            }
+    .hero-text {
+        order: 2; /* Pindahkan teks ke bawah gambar */
+    }
 
-            .hero-image {
-                order: 1; /* mindahin gambar ke atas teks */
-                text-align: center;
-            }
+    .hero-image {
+        order: 1; /* Pindahkan gambar ke atas teks */
+        text-align: center;
+    }
 
-            .hero-image img {
-                width: 170px; /* ukursn gambar profil di mobile */
-                height: 170px;
-            }
+    .hero-image img {
+        width: 170px; /* Ukuran gambar profil di mobile */
+        height: 170px;
+    }
 
-            .hero-text h1 {
-                font-size: 2rem;
-            }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 
-            .section-header {
-                flex-direction: column; /* tumpuk header dan view all */
-                align-items: flex-start;
-                gap: 10px;
-                margin-top: 30px;
-            }
+    .section-header {
+        flex-direction: column; /* Tumpuk header dan "View All" */
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 30px;
+    }
 
-            .section-header h2 {
-                font-size: 1.3rem;
-            }
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
 
-            .recent-posts {
-                padding: 30px 0;
-            }
+    .recent-posts {
+        padding: 30px 0;
+    }
 
-            .posts-grid {
-                grid-template-columns: 1fr; /* 1 kolom untuk post di mobile */
-            }
+    .posts-grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk post di mobile */
+    }
 
-            .featured-works {
-                padding: 30px 0;
-            }
+    .featured-works {
+        padding: 30px 0;
+    }
 
-            .work-item {
-                flex-direction: column; /* gmbar di atas, info di bawah */
-                text-align: center;
-            }
+    .work-item {
+        flex-direction: column; /* Gambar di atas, info di bawah */
+        text-align: center;
+    }
 
-            .work-item img {
-                width: 100%; /* lebar penuh di mobile */
-                height: auto;
-                max-width: 246px; /* batasi lebar maksimal */
-                margin: 0 auto 15px; /* pusarkan gambar */
-            }
+    .work-item img {
+        width: 100%; /* Lebar penuh di mobile */
+        height: auto;
+        max-width: 246px; /* Batasi lebar agar tidak terlalu besar di layar kecil */
+        margin: 0 auto 15px; /* Pusatkan gambar */
+    }
 
-            .work-info {
-                text-align: left; /* ssesuaikan teks info agar tetap di kiri */
-            }
+    .work-info {
+        text-align: left; /* Sesuaikan teks info agar tetap di kiri */
+    }
 
-            .work-info h3 {
-                font-size: 1.4rem;
-            }
+    .work-info h3 {
+        font-size: 1.4rem;
+    }
 
-            .work-meta {
-                justify-content: center; /* pusatkan meta info */
-                margin-bottom: 10px;
-            }
-        }
+    .work-meta {
+        justify-content: center; /* Pusatkan meta info */
+        margin-bottom: 10px;
+    }
+}
     </style>
 </head>
 <body>
@@ -270,19 +272,21 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero-section">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <h1>Halo, Saya Ain Jelita Ikhwati<br>Front-end Developer</h1>
-                    <p>Fokus pada pembuatan antarmuka pengguna yang intuitif dan responsif dengan performa optimal.
-                      Saya selalu bersemangat untuk mengubah ide-ide kompleks menjadi pengalaman web yang mulus dan menarik.</p>
+                    <h1>Hi, I am John,<br>Creative Technologist</h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     <a href="#" class="btn btn-primary">Download Resume</a>
                 </div>
                 <div class="hero-image">
-                    <img src="anjeli.jpg" alt="Anjeli Profile Picture">
+                    <img src="anjeli.jpg" alt="John Doe Profile">
                 </div>
             </div>
         </section>
+
+        <!-- Recent Posts Section -->
         <section class="recent-posts">
             <div class="container">
                 <div class="section-header">
@@ -291,22 +295,24 @@
                 </div>
                 <div class="posts-grid">
                     <article class="post-card">
-                        <h3>Membangun Sistem Desain dari Nol di Figma</h3>
+                        <h3>Making a design system from scratch</h3>
                         <div class="post-meta">
-                            <span>12 Feb 2020</span> | <span>Design System, UI/UX</span>
+                            <span>12 Feb 2020</span> | <span>Design, Pattern</span>
                         </div>
-                        <p>Pembahasan mendalam tentang langkah-langkah dalam menciptakan sisttem desain yang konsisten dan skalabel, mulai dari prinsip dasar hingga implementasi komponen. Sebuah fondasi kuat untuk proyek Front-End yang kompleks.</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     </article>
                     <article class="post-card">
-                        <h3>Meningkatkan Performa Aplikasi Web dengan Optimasi CSS</h3>
+                        <h3>Creating pixel perfect icons in Figma</h3>
                         <div class="post-meta">
-                            <span>12 Feb 2020</span> | <span>Web Performance, CSS Optimization</span>
+                            <span>12 Feb 2020</span> | <span>Figma, Icon Design</span>
                         </div>
-                        <p>Tips dan trik praktis untuk mengoptimalkan kode CSS demi loading website yang lebih cepat dan pengalaman pengguna yang lebih baik. Dari CSS-in-JS hingga Critical CSS, kita bahas semuanya.</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     </article>
                 </div>
             </div>
         </section>
+
+        <!-- Featured Works Section -->
         <section class="featured-works">
             <div class="container">
                 <div class="section-header">
@@ -314,33 +320,33 @@
                 </div>
                 <div class="works-list">
                     <article class="work-item">
-                        <img src="designing-dashboard.jpg" alt="Designing Dashboards">
+                        <img src="image1.png" alt="Designing Dashboards">
                         <div class="work-info">
                             <h3>Designing Dashboards</h3>
                             <div class="work-meta">
                                 <span class="year">2020</span> <span class="category">Dashboard</span>
                             </div>
-                            <p>Proyek pengembangan dashboard interaktif menggunakan React dan D3.js untuk memvisualisasikan data real-time, memberikan pengalaman pengguna yang dinamis dan informatif.</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </article>
                     <article class="work-item">
-                        <img src="modern.jpg" alt="Modern E-commerce Web App">
+                        <img src="image2.png" alt="Vibrant Portraits of 2020">
                         <div class="work-info">
-                            <h3>Modern E-commerce Web App</h3>
+                            <h3>Vibrant Portraits of 2020</h3>
                             <div class="work-meta">
-                                <span class="year">2020</span> <span class="category">E-commerce, React, Node.js</span>
+                                <span class="year">2020</span> <span class="category">Illustration</span>
                             </div>
-                            <p>Aplikasi e-commerce lengkap dengan fitur keranjang belanja, checkout, dan manajemen produk. Dibangun dengan fokus pada kecepatan dan user experience yang mulus.</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </article>
                     <article class="work-item">
-                        <img src="landing.jpg" alt="Landing Page for Startup">
+                        <img src="iamge3.png" alt="36 Days of Malayalam type">
                         <div class="work-info">
-                            <h3>Responsive Landing Page for Startup</h3>
+                            <h3>36 Days of Malayalam type</h3>
                             <div class="work-meta">
-                                <span class="year">2018</span> <span class="category">Landing Page, Responsive Web Design</span>
+                                <span class="year">2018</span> <span class="category">Typography</span>
                             </div>
-                            <p>Pembuatan landing page yang menarik dan responsif untuk startup teknologi, dirancang untuk mengkonversi pengunjung menjadi pengguna dengan desain yang bersih dan CTA yang jelas</p>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </article>
                 </div>
@@ -351,12 +357,12 @@
     <footer>
         <div class="container">
             <div class="social-icons">
-                <a href="#https://www.facebook.com/ainjelita.ikhwatii/?locale=id_ID"><i class="fab fa-facebook-square"></i></a>
-                <a href="#https://www.instagram.com/_anjeli23/"><i class="fab fa-instagram"></i></a>
-                <a href="#https://x.com/matchalatte318?s=21"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p>Copyright © 2023 Ain Jelita Ikhwati. All rights reserved.
+            <p>Copyright ©2020 All rights reserved</p>
         </div>
     </footer>
 
