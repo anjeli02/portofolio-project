@@ -8,73 +8,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .blog-page-main h1 {
-    font-size: 2.5rem;
+        .single-blog-main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.single-post-content h1 {
+    font-size: 2.8rem;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    color: #21243D;
-}
-
-.blog-posts-list {
-    display: grid;
-    gap: 30px; /* jarak antar post */
-}
-
-.blog-post-item {
-    background-color: #fff; /* bekgron untuk setiap post */
-    padding-bottom: 30px;
-    border-bottom: 1px solid #E0E0E0;
-}
-
-.blog-post-item:last-child {
-    border-bottom: none;
-}
-
-.blog-post-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #21243D;
-}
-
-.blog-post-item h3 a {
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-.blog-post-item h3 a:hover {
-    color: #ff6464; /* wrna hover untuk judul blog */
-}
-
-.blog-meta {
-    font-size: 1rem;
-    color: #8695A4;
     margin-bottom: 20px;
+    color: #21243D;
 }
 
-.blog-post-item p {
+.post-detail-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.post-detail-meta .year {
+    background-color: #ff7c7c; /* wrna tahun yang berbeda */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.post-detail-meta .category {
+    color: #21243D; /* wrna kategori yang berbeda */
     font-size: 1rem;
+}
+
+.single-post-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
     color: #333;
 }
 
-/* Responsive Blog Page */
+.single-post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.single-post-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #21243D;
+}
+
+.single-post-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #21243D;
+}
+
+.single-post-content ul {
+    list-style: disc; /* utuk bullet poin */
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.single-post-content ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive Single Blog Page */
 @media (max-width: 768px) {
-    .blog-page-main h1 {
+    .single-blog-main {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .single-post-content h1 {
         font-size: 2rem;
-        margin-top: 30px;
         text-align: center;
     }
 
-    .blog-post-item {
-        padding-bottom: 20px;
+    .post-detail-meta {
+        justify-content: center; /* pusatkan meta infoo */
+        margin-bottom: 20px;
     }
 
-    .blog-post-item h3 {
-        font-size: 1.5rem;
+    .single-post-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
 
-    .blog-meta {
-        font-size: 0.9rem;
+    .single-post-content h2 {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .single-post-content h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 10px;
     }
 }
     </style>
@@ -96,39 +139,27 @@
         </div>
     </header>
 
-    <main class="blog-page-main">
+    <main class="single-blog-main">
         <div class="container">
-            <h1> My Blog</h1>
-            <div class="blog-posts-list">
-                <article class="blog-post-item">
-                    <a href="single-blog.html"><h3>Membangun Sistem Desain dari Nol di Figma</h3></a>
-                    <div class="blog-meta">
-                        <span>12 Feb 2019</span> | <span>Design System, UI/UX</span>
-                    </div>
-                    <p>Pembahasan mendalam tentang langkah-langkah dalam menciptakan sistem desain yang konsisten dan skalabel, mulai dari prinsip dasar hingga implementasi komponen. Sebuah fondasi kuat untuk proyek Front-End yang kompleks.</p>
-                </article>
-                <article class="blog-post-item">
-                    <a href="single-blog.html"><h3>Meningkatkan Performa Aplikasi Web dengan Optimasi CSS</h3></a>
-                    <div class="blog-meta">
-                        <span>12 Feb 2019</span> | <span>Web Performance, CSS Optimization</span>
-                    </div>
-                    <p>Tips dan trik praktis untuk mengoptimalkan kode CSS demi loading website yang lebih cepat dan pengalaman pengguna yang lebih baik. Dari CSS-in-JS hingga Critical CSS, kita bahas semuanya.</p>
-                </article>
-                <article class="blog-post-item">
-                    <a href="single-blog.html"><h3>Pengenalan Konsep Komponen dalam React.js</h3></a>
-                    <div class="blog-meta">
-                        <span>12 Feb 2019</span> | <span>React.js, Components</span>
-                    </div>
-                    <p>Panduan lengkap untuk memahami dan mulai menggunakan komponen dalam ekosistem React.js, fondasi utama untuk membangun antarmuka pengguna yang modular dan reusabel.</p>
-                </article>
-                <article class="blog-post-item">
-                    <a href="single-blog.html"><h3>Membuat Animasi UI Halus dengan CSS Saja</h3></a>
-                    <div class="blog-meta">
-                        <span>12 Feb 2019</span> | <span>CSS Animation, UI/UX</span>
-                    </div>
-                    <p>Menjelajahi teknik-teknik CSS untuk menciptakan transisi dan animasi yang memukau tanpa ketergantungan JavaScript, meningkatkan pengalaman visual pengguna.</p>
-                </article>
-            </div>
+            <article class="single-post-content">
+                <h1>UI Interactions of the week</h1>
+                <div class="post-detail-meta">
+                    <span class="year">2019</span> <span class="category">Design System, UI/UX, Figma</span>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <img src="image1.png" alt="Blog Image 1">
+                <h2>>Mengapa Sistem Desain Penting?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet. At, laudantium veritatis sed eum veniam aliquam deserunt aperiam excepturi quam odio maiores quod, velit neque esse nulla perferendis magnam.</p>
+                <img src="image2.png" alt="Blog Image 2">
+                <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <ul>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 3</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur architecto modi, nostrum possimus animi suscipit. Tenetur exercitationem nulla, illum enim vel voluptatum, et earum accusantium numquam, blanditiis eius! Possimus, eius!</p>
+            </article>
         </div>
     </main>
 
@@ -140,7 +171,7 @@
                 <a href="#https://x.com/matchalatte318?s=21"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p>Copyright © 2023  Ain Jelita Ikhwati. All rights reserved.
+            <p>Copyright © 2023 Ain Jelita Ikhwati. All rights reserved.
         </div>
     </footer>
 
